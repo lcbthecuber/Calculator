@@ -9,10 +9,11 @@ def multiply(num1, num2):
 
 def divide(num1, num2):
   return num1 / num2
-
+  
 def run_program():
 
-  print("pick which operations!  1, add, 2, subtract, 3, multiply,  4, divide")
+  print("pick which operations!  1, add, 2, subtract,")
+  print(" 3, multiply,  4, divide")
 
   select = float(input("Select operations from 1, 2, 3, 4 "))
   if select > 4 or select < 1:
