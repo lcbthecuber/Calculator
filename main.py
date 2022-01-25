@@ -1,3 +1,4 @@
+numbers_list = ['1', '2', '3', '4']
 def add(num1, num2):
   return num1 + num2
 
@@ -15,10 +16,11 @@ def run_program():
   print("pick which operations!  1, add, 2, subtract,")
   print(" 3, multiply,  4, divide")
 
-  select = float(input("Select operations from 1, 2, 3, 4 "))
-  if select > 4 or select < 1:
+  select = str(input("Select operations from 1, 2, 3, 4 "))
+  if select not in numbers_list:
     print("This is not avaliable")
-    return None
+    return
+  select = float(select)
   num1 = float(input("Enter the first number"))
   num2 = float(input("Enter the second number"))
 
